@@ -1,5 +1,9 @@
 <h1><%= pluralize(@projects.length, 'Project') %></h1>
 
 <% @projects.each do |project| %>
-	<h2> <%= project %> </h2>
+	<h2> <%= project.name %> </h2>
+	<h2> <%= project.description %> </h2>
+	<h2> <%= project.target_pledge_amount %> </h2>
+	<h2> <%= project.pledging_ends_on %> </h2>
+	<h2> <%= project.website %> </h2>
 <% end %>
